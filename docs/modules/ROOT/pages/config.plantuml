@@ -8,6 +8,8 @@ hide circle
 hide empty members
 hide methods	
 
+allow_mixing
+
 'Colors => see http://plantuml.com/color
 'skinparam monochrome true
 'skinparam monochrome reverse
@@ -21,6 +23,19 @@ skinparam defaultTextAlignment center
 skinparam storage {
   BackgroundColor YELLOW
 }
+
+skinparam storage<< contrib >> {
+  BackgroundColor GRAY
+}
+
+skinparam storage<< resp >> {
+  BackgroundColor ORANGE
+}
+
+skinparam storage<< sae >> {
+  BackgroundColor BLUE
+}
+
 
 skinparam node {
   BackgroundColor BLUE
@@ -61,10 +76,3 @@ skinparam arrow {
 '-----------------------------------
 !define ressource(id,label) storage label <<Ressource>> as id
 !define sae(id,label) node label <<SAÉ>> as id
-
-
-
-
-@startuml
-class A
-@enduml

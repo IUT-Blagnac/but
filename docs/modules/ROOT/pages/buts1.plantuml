@@ -1,22 +1,12 @@
 @startuml buts1
+allow_mixing
 
 !include config.plantuml
 '!include competences.plantuml
 
 '!include sae.plantuml
 
-'----------- Ressources
-storage "R1.01\nInitiation au dev." as r11
-storage "R1.02\nDev. interfaces web" as r12
-storage "R1.03\nIntro. archi." as r13
-storage "R1.04\nIntro. systèmes " as r14
-storage "R1.05\nIntroduction BD " as r15
-storage "R1.06\nMaths discrètes " as r16
-storage "R1.07\nOutils fondamentaux " as r17
-storage "R1.08\nGestion proj. orga. " as r18
-storage "R1.09\nÉconomie" as r19
-storage "R1.10\nAnglais technique" as r110
-storage "R1.11\nBases de la comm " as r111
+!include s1-ressources.plantuml
 
 '----------- SAÉs
 node "SAE 1.1\nImplémentation\nbesoin client" as sae11 
@@ -57,8 +47,8 @@ r111 --> sae15 : x
 r111 --> sae16 : 0/4
 
 '--- Legend---
-storage Ressource as r
-node SAÉ as s
+storage "Ressource" as r
+node "SAÉ" as s
 r --> s : TD/TP
 
 ' Astuce cachée pour mettre la 14 à gauche de la 15

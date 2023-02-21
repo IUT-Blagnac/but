@@ -1,0 +1,247 @@
+@startuml buts1
+allow_mixing
+hide stereotypes
+
+!include config.plantuml
+'!include competences.plantuml
+
+'!include sae.plantuml
+
+' !include s1-ressources.plantuml
+
+
+
+'----------- Ressources
+
+'rectangle c5 as "C5 - Projet" {
+
+rectangle jmb as "JMB" {
+storage "Chef" <<resp>>
+storage "R3.03\nAnalyse" as r33
+storage "R2.03\nQualité" as r23
+storage "S1.05" as s15 <<sae>>
+storage "S2.02" as s22 <<sae>>
+storage "S4.A.01" as s4a1 <<sae>>
+}
+
+rectangle ep as "Esther" {
+storage "R1.08\nGestion proj. orga. " as r18
+storage "R1.09\nÉconomie" as r19
+storage "R3.10\nManagemen SI" as r310
+storage "R3.11\nDroit" as r311
+storage "R2.10\nGSI" as r210
+storage "R2.11\nDroit" as r211
+storage "R4.A.09\nManagement Avancé" as r4a9
+storage "R4.C.11\nManagement avancé" as r4c11
+storage "S1.06" as s16 <<sae>>
+storage "S2.05" as s25 <<sae>>
+}
+'}
+
+'rectangle c3 as "C3 - ASR" {
+
+rectangle pso as "Pascal" {
+storage "Dir. Étud" <<resp>> as depso
+storage "R2.04\nRéseau bas niveau" as r24
+storage "R2.05\nServ. Réseau" as r25
+storage "R3.02\nDev. Eff." as r32
+storage "R4.C.09\nRéseaux avancés" as r4c9
+}
+
+
+rectangle ps as "Patricia" {
+storage "Alt." <<resp>> as alt
+storage "R1.04\nIntro. systèmes " as r14
+storage "R3.05\nProg. système" as r35
+storage "R4.A.08\nVirtualisation" as r4a8
+storage "S1.03" as s13 <<sae>>
+storage "S2.03" as s23 <<sae>>
+}
+
+rectangle ld as "LD" {
+storage "R3.06\nArchi. réseaux" as r36
+}
+'}
+
+'rectangle c1 as "C1 - Développement" {
+
+rectangle ap as "André" {
+storage "Apsio" <<resp>>
+storage "R3.04\nQualité" as r34
+storage "R2.01\nDev. Objet" as r21
+storage "R4.A.11\nDév. Mobile" as r4a11
+storage "S2.01" as s21 <<sae>>
+}
+
+
+rectangle mfc as "Marie" {
+storage "R1.01\nInitiation au dev." as r11
+storage "S1.01" as s11 <<sae>>
+}
+
+rectangle mdm as "Marianne" {
+storage "R4.02\nQualité" as r42
+storage "S1.02" as s12 <<sae>>
+}
+
+rectangle fp as "Fabrice" {
+storage "R2.02\nIHM" as r22
+storage "R4.A.10\nCompléments Web" as r4a10
+}
+rectangle lr as "Laurence" {
+storage "Stage" <<resp>>
+storage "R1.02\nDev. interfaces web" as r12
+storage "R1.03\nIntro. archi." as r13
+}
+'}
+
+'rectangle c4 as "C4 - Données" {
+
+rectangle ln as "LN" {
+storage "R2.06\nExpl. BD" as r26
+storage "R3.01\nDev. Web" as r31
+storage "R3.07\nSQL & Prog." as r37
+storage "S3.01" as s3a1 <<sae>>
+storage "S2.04" as s24 <<sae>>
+}
+
+rectangle ot as "Olivier" {
+storage "R1.05\nIntroduction BD " as r15
+storage "R4.03\nQualité & Non Rel." as r43
+storage "R4.C.10\nAnalyse & Visu." as r4c10
+storage "S1.04" as s14 <<sae>>
+storage "S4.C.01" as s4c1 <<sae>>
+}
+'}
+
+
+'rectangle c2 as "C2 - Optim" {
+
+rectangle rb as "RB" {
+storage "Apsio" <<resp>>
+storage "R1.06\nMaths discrètes " as r16
+storage "R2.08\nStats" as r28
+storage "R2.09\nMéth. Num." as r29
+storage "R3.08\nProbas" as r38
+storage "R3.15\nIoT" as r315
+storage "S3.C.01" as s3c1 <<sae>>
+storage "R4.A.12\nAutomates" as r4a12
+storage "R4.C.08\nCrypto & Sécu." as r4c8
+}
+
+rectangle pse as "Pablo" {
+storage "EdT" <<resp>>
+storage "R1.07\nOutils fondamentaux " as r17
+storage "R2.07\nGraphes" as r27
+storage "R3.09\nCrypto" as r39
+storage "R4.01\nArch. Logicielle" as r41
+storage "R4.04\nOptim" as r44
+storage "S4.AC.01" as s4ac1 <<sae>>
+}
+'}
+
+'rectangle c6 as "C6 - Collaborer" {
+
+rectangle al as "Amélie" {
+' storage "R1.11\nBases de la comm " as r111
+' storage "R1.11\nPPP " as r112
+' storage "R2.13\nComm. Tec." as r213
+' storage "R2.14\nPPP" as r214
+' storage "R3.13\nComm. Pro" as r313
+' storage "R3.14\nPPP" as r314
+' storage "R4.06\nComm. Interne" as r46
+' storage "R4.07\nPPP" as r47
+' storage "Portfolio" as portfolio <<sae>>
+' storage "S2.06" as s26 <<sae>>
+' storage "R5.02\nPPP" as r52
+' storage "R5.03\nComm." as r53
+' storage "R6.03\nComm" as r6a3
+' storage "R6.04\nPPP" as r6a4
+storage "R1-R6\nCom." as com
+storage "R1-R6\nPPP" as ppp
+storage "Portfolio" as portfolio <<sae>>
+}
+
+rectangle ic as "Iza" {
+storage "Dir. Étud" <<resp>> as deisa
+' storage "R1.10\nAnglais technique" as r110
+' storage "R3.12\nAnglais" as r312
+' storage "R2.12\nAnglais" as r212
+' storage "R4.05\nAnglais" as r45
+' storage "R5.A.14\nAnglais" as r5a14
+storage "R1-R5\nAnglais" as r110
+}
+'}
+
+rectangle but3 as "BUT3" {
+storage "R5.01\nInit. Manag.\n15" as r51
+storage "R5.A.04\nQualité Algo.\n20" as r5a4
+storage "R5.A.05\nProg. avancée\n40" as r5a5
+storage "R5.A.06\nProg. Mult.\n15" as r5a6
+storage "R5.A.07\nAutom.\n15" as r5a7
+storage "R5.A.08\nQualité\n30" as r5a8
+storage "R5.A.09\nVirt. Avancée\n20" as r5a9
+storage "R5.A.010\nNouv. BD\n43" as r5a10
+storage "R5.A.11\nAide décision\n15" as r5a11
+storage "R5.A.12\nModél. Math.\n40" as r5a12
+storage "R5.A.13\nÉco. durable\n15" as r5a13
+
+storage "S5.A.01" as s5a1 <<sae>>
+
+storage "R6.01\nEntrepreunariat" as r61
+storage "R6.02\nDroit & PI" as r62
+storage "R6.A.05\nDév. avancé" as r6a5
+storage "R6.A.06\nMaintenance" as r6a6
+
+storage "S6.A.01" as s6a1 <<sae>>
+}
+
+'--- Contributions
+' ap ..> r11
+' ld ..> r11
+' mdm ..> r11
+' mdm ..> r4a10
+' ln ..> r15
+' ln ..> r4c11
+' ln ..> r4a10
+' jmb ..> r34
+' jmb ..> r21
+' ap ..> r23
+' ap ..> r33
+' fp ..> r42
+' fp .> r31
+' fp .> r41
+
+'--- Drawing ---
+' sae  -down[hidden]- ps
+' ps  -down[hidden]- lr
+' lr  -down[hidden]- pso
+fp  -down[hidden]- mfc
+mdm  -down[hidden]- fp
+' mdm  -down[hidden]- ld
+ld  -down[hidden]- mdm
+' ep  -down[hidden]- ap
+' ap  -down[hidden]- jmb
+' jmb  -down[hidden]- ot
+' ot  -down[hidden]- ln
+' ln  -right[hidden]- pse
+' pse  -down[hidden]- al
+mfc  -down[hidden]- ic
+' c1  -down[hidden]-- c2
+' c1  -down[hidden]-- c5
+' c1  -down[hidden]-- c6
+' 'c3  -right[hidden]-- c6
+' 'c4  -down[hidden]-- c5
+' c2  -right[hidden]-- c5
+' c1  -right[hidden]- c3
+' c4  -down[hidden]-- c6
+' c5  -down[hidden]- but3
+
+
+'--- Legend---
+storage "Responsable" as r
+storage "Responsabilité" as c << resp >>
+storage "SAÉ" as sae << sae >>
+r --> sae
+c --> sae 
+@enduml
