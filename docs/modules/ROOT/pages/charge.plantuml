@@ -46,16 +46,18 @@ storage "R2.04\nRéseau bas niveau" as r24
 storage "R2.05\nServ. Réseau" as r25
 storage "R3.02\nDev. Eff." as r32
 storage "R4.C.09\nRéseaux avancés" as r4c9
+storage "S2.03" as s23 <<sae>>
 }
 
 
 rectangle ps as "Patricia" {
 storage "Alt." <<resp>> as alt
+storage "Saghe" <<resp>> as saghe
 storage "R1.04\nIntro. systèmes " as r14
 storage "R3.05\nProg. système" as r35
 storage "R4.A.08\nVirtualisation" as r4a8
+storage "R4.14\nNumérique resp." as r414
 storage "S1.03" as s13 <<sae>>
-storage "S2.03" as s23 <<sae>>
 }
 
 rectangle ld as "LD" {
@@ -118,7 +120,7 @@ storage "S4.C.01" as s4c1 <<sae>>
 'rectangle c2 as "C2 - Optim" {
 
 rectangle rb as "RB" {
-storage "Apsio" <<resp>>
+storage "Apsio" <<resp>> as remiapsio
 storage "R1.06\nMaths discrètes " as r16
 storage "R2.08\nStats" as r28
 storage "R2.09\nMéth. Num." as r29
